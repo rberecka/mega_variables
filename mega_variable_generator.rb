@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'securerandom'
 
-(0..1000).each do |i|
+(0..10).each do |i|
   variable_name = SecureRandom.hex
   variable_stanza = <<-HCL
     variable "#{variable_name}" {
